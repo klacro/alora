@@ -1,0 +1,25 @@
+:root {
+  --bg-color: #fff;
+  --text-color: #060606;
+  --second-text-color: #605544;
+  --section-color: #e7dfd3;
+
+  --font-heading: "Playfair Display", "Georgia", serif;
+  --font-body: "DM Sans", "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
