@@ -34,9 +34,9 @@ h3 {
 }
 
 h1 {
-    font-size: calc(16px + 3.5vw);
-    font-weight: bold;
-    line-height: 1.3;
+  font-size: calc(24px + 3vw);
+  font-weight: bold;
+  line-height: 1.3;
 }
 
 .wrapper {
@@ -73,7 +73,7 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 20px 40px 12px;
+  padding: 20px 48px 12px;
   background-color: var(--section-color);
 }
 
@@ -114,26 +114,52 @@ nav {
 }
 
 .hero-img {
+  object-fit: cover;
   width: 100vw;
   height: auto;
+  min-height: 480px;
   display: block;
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content h1 {
+  margin-bottom: 20px;
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background-color: var(--bg-color);
-    padding: 12px 24px;
-    border: 1px;
-    border-color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--bg-color);
+  padding: 12px 24px;
+  border: 1px solid var(--text-color);
+  width: fit-content;
+  transition: background-color 200ms ease-in-out;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: var(--section-color);
+  color: var(--text-color);
+}
+
+.bestsellers {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
